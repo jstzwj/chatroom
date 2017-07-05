@@ -54,6 +54,11 @@ class ChatController extends Controller
         {
             return redirect('login');
         }
+        //检测是否为空
+        if(trim($request->input('chat_msg'))=="")
+        {
+            return redirect('chat');
+        }
         //插入消息
         DB::table('msg')->insert(['chat_user_id'=>Session::get('user_id'),
         'chat_msg'=>$request->input('chat_msg'),
@@ -63,6 +68,25 @@ class ChatController extends Controller
                 ->update(['user_active_time' => date("Y-m-d H:i:s")]);
         return redirect('chat');
     }
+    public function upload_avatar(Request $request)
+    {
+        if ($request->hasFile('avatar')&&$request->file('avatar')->isValid()) 
+        {
+            $id=Session::get('user_id');
+            $path = $request->file('avatar')->path();
+            $extension = $request->file('avatar')->extension();
+            $path = $request->photo->storeAs('avatar', $id+date("Y-m-d H:i:s")+$extension);
+            //数据库存储
+            DB::table('user')->where('id', $id)
+                ->update(['user_avatar' => $path]);
+            return redirect('chat');
+        }
+        else
+        {
+            return redirect('chat');
+        }
+    }
+    
 
 
 }

@@ -116,6 +116,9 @@
     background-color:rgb(255,255,255);
     left: -25px;
     top: 5px;
+    max-width:500px;
+    word-wrap: break-word;
+    text-align:left;
   }
   .chat-text-box-right
   {
@@ -128,6 +131,9 @@
     right: -25px;
     top: 5px;
     background-color: lightskyblue;
+    max-width:500px;
+    word-wrap: break-word;
+    text-align:left;
   }
   .chat-text-corner-box-left
   {

@@ -1,0 +1,209 @@
+body{
+    background: url('../image/background.jpg') ;
+}
+
+.container, .container-fluid{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.mb-left{
+    margin-right: 220px;
+}
+
+.mb-right{
+    float: right;
+    width: 200px;
+}
+
+.mb-view-title{
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.user-info{
+    text-align: center;
+}
+
+.user-page-info{
+    text-align: left;
+}
+
+.bolg-info{
+
+}
+
+.blog-title-text{
+    font-size: 1.5em;
+}
+
+.blog{
+    padding: 10px;
+}
+
+.blog-content{
+    margin-top: 50px;
+}
+
+.mb-block-title{
+    background-color: #383838; 
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px; 
+}
+
+.mb-block-content{
+    padding: 30px;
+}
+
+.mb-block{
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.category ul, .mb-block ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.category li, {
+    padding-left: 0px;
+    margin: 8px 0px;
+}
+
+.desc{
+    margin-left: 150px;
+}
+
+.btn-submit{
+    width: 100px;
+    background-color: #252525;
+    border-color: #252525;
+    color: white;
+}
+
+.user-comment{
+    border-color: #383838;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
+.user-comment .user-img{
+    width: 75px;
+    float: left;
+    display: mb-block;
+}
+
+.comment-info{
+    margin-left: 80px;
+    line-height: 20px;
+    min-height: 75px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.comment-info hr{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.nav .active a{
+    color: white;
+    background-color: #383838;
+}
+
+/** PNotify **/
+.alert-success {
+  color: #ffffff;
+  background-color: rgba(38, 185, 154, 0.88);
+  border-color: rgba(38, 185, 154, 0.88); }
+
+.alert-info {
+  color: #E9EDEF;
+  background-color: rgba(52, 152, 219, 0.88);
+  border-color: rgba(52, 152, 219, 0.88); }
+
+.alert-warning {
+  color: #E9EDEF;
+  background-color: rgba(243, 156, 18, 0.88);
+  border-color: rgba(243, 156, 18, 0.88); }
+
+.alert-danger,
+.alert-error {
+  color: #E9EDEF;
+  background-color: rgba(231, 76, 60, 0.88);
+  border-color: rgba(231, 76, 60, 0.88); }
+
+.ui-pnotify.dark .ui-pnotify-container {
+  color: #E9EDEF;
+  background-color: rgba(52, 73, 94, 0.88);
+  border-color: rgba(52, 73, 94, 0.88); }
+
+.custom-notifications {
+  position: fixed;
+  margin: 15px;
+  right: 0;
+  float: right;
+  width: 400px;
+  z-index: 4000;
+  bottom: 0; }
+
+ul.notifications {
+  float: right;
+  display: block;
+  margin-bottom: 7px;
+  padding: 0;
+  width: 100%; }
+
+.notifications li {
+  float: right;
+  margin: 3px;
+  width: 36px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); }
+
+.notifications li:last-child {
+  margin-left: 0; }
+
+.notifications a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 8px; }
+
+.tabbed_notifications .text {
+  padding: 5px 15px;
+  height: 140px;
+  border-radius: 7px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3); }
+
+.tabbed_notifications div p {
+  display: inline-block; }
+
+.tabbed_notifications h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 80%;
+  float: left;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block; }
+
+.tabbed_notifications .close {
+  padding: 5px;
+  color: #E9EDEF;
+  float: right;
+  opacity: 1; }
+
+/** /PNotify **/

@@ -110,6 +110,11 @@
                 <a href="#" class="close" data-dismiss="alert" onclick="closeWarning('#loginAlert');">&times;</a>
                用户名或密码错误
             </div>
+            @elseif(isset($alert_flag)&& $alert_flag=== 2)
+            <div id="loginAlert" class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="alert" onclick="closeWarning('#loginAlert');">&times;</a>
+               注册成功，请登陆
+            </div>
             @endif
             
 
